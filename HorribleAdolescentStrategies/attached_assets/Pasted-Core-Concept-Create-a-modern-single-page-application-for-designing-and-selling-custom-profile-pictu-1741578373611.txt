@@ -1,0 +1,72 @@
+Core Concept
+Create a modern single-page application for designing and selling custom profile pictures (PFPs) with a sleek, futuristic glassmorphism design theme.
+
+Core Features
+Professional glassmorphism theme with semi-transparent elements and subtle blur effects
+Multiple pricing plans for different PFP styles (Basic Plan: ₹79, Advanced Plan: ₹129)
+Direct contact form integration with email for orders
+Instagram integration for easy communication
+Review/feedback section with star ratings
+Responsive design that works on all devices
+Design Requirements
+Glassmorphism design theme: Semi-transparent glassy elements with blurred backgrounds
+Circular profile pictures throughout the site
+"HITENDRA edition" branding prominently displayed
+Mobile-first responsive design that scales well to larger screens
+Color scheme: Primarily dark background with vibrant accent colors and white text
+Content Structure
+Header & Navigation
+
+Logo/Brand name
+Simple navigation menu
+Profile Section
+
+Circular profile image
+Name: "Hitendra Thakor"
+Social links (Instagram: @hitendra.edition, Facebook)
+Terms & Conditions Section
+
+Checkbox for accepting terms
+Link to detailed terms
+PFP Plans Section
+
+Basic Plan (₹79)
+Simple background design
+Clean character element
+Clear text below profile picture
+Advanced Plan (₹129) - Marked as "Coming Soon"
+Premium quality with stylish elements
+Unique font effects
+High-quality static image
+Order Form Section
+
+Email input
+Selected plan display
+Detailed description textarea
+Instagram ID field
+Order submission button
+Alternative "DM on Instagram" button
+Review Section
+
+Star rating system (1-5 stars)
+Name input
+Feedback textarea
+Submission that opens email client
+Footer
+
+Copyright information
+Additional links/information
+Technical Requirements
+Built with React and TypeScript
+Tailwind CSS for styling
+Form validation and error handling
+Email integration for order submission
+No backend database required - direct email communication
+Proper error handling for images
+User Flow
+User views available PFP designs and plans
+User selects a plan
+User is taken to order form with selected plan pre-filled
+User enters details (email, description, Instagram ID)
+User either submits order (opens email client) or contacts via Instagram
+Optional: User leaves a review with star rating

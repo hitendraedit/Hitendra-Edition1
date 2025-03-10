@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HITENDRA edition | Custom Profile Pictures</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <!-- Header Section -->
+    <header class="glass-card header">
+      <div class="logo">
+        <h1>HITENDRA edition</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#order">Order</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section id="profile" class="glass-card section">
+      <div class="profile-container">
+        <div class="profile-image">
+          <img src="profile.jpg" alt="Hitendra Thakor">
+        </div>
+        <h2>Hitendra Thakor</h2>
+        <div class="social-links">
+          <a href="https://instagram.com/hitendra.edition" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i> @hitendra.edition
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-facebook"></i> Facebook
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="section">
+      <h2 class="section-title">Choose Your PFP Style</h2>
+      <div class="plans-container">
+        <div class="glass-card plan-card">
+          <div class="plan-badge">Available Now</div>
+          <h3>Basic Plan</h3>
+          <div class="plan-price">₹79</div>
+          <div class="plan-samples">
+            <div class="plan-image">
+              <img src="pfp-sample1.jpg" alt="Basic Plan Example 1">
+            </div>
+            <div class="plan-image">
+              <img src="pfp-sample2.jpg" alt="Basic Plan Example 2">
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li>Simple background design</li>
+            <li>Clean character element</li>
+            <li>Clear text below profile picture</li>
+          </ul>
+          <button class="btn-primary select-plan" data-plan="basic">Select Plan</button>
+        </div>
+
+        <div class="glass-card plan-card coming-soon">
+          <div class="plan-badge">Coming Soon</div>
+          <h3>Advanced Plan</h3>
+          <div class="plan-price">₹129</div>
+          <ul class="plan-features">
+            <li>Premium quality with stylish elements</li>
+            <li>Unique font effects</li>
+            <li>High-quality static image</li>
+          </ul>
+          <button class="btn-secondary" disabled>Available Soon</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="glass-card section">
+      <h2 class="section-title">Place Your Order</h2>
+      <form id="order-form" class="order-form">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com">
+        </div>
+        
+        <div class="form-group">
+          <label for="selected-plan">Selected Plan</label>
+          <input type="text" id="selected-plan" name="selected-plan" readonly value="None Selected">
+        </div>
+        
+        <div class="form-group">
+          <label for="description">Detailed Description</label>
+          <textarea id="description" name="description" rows="4" required placeholder="Describe what you want for your profile picture..."></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="instagram">Instagram ID</label>
+          <input type="text" id="instagram" name="instagram" required placeholder="@yourusername">
+        </div>
+        
+        <div class="form-group terms">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I accept the <a href="#" id="terms-link">Terms & Conditions</a></label>
+        </div>
+        
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Submit Order</button>
+          <a href="https://instagram.com/hitendra.edition" target="_blank" class="btn-secondary">DM on Instagram</a>
+        </div>
+      </form>
+      
+      <!-- Terms & Conditions Modal -->
+      <div id="terms-modal" class="modal">
+        <div class="glass-card modal-content">
+          <span class="close-modal">&times;</span>
+          <h3>Terms & Conditions</h3>
+          <div class="terms-content">
+            <h4>Terms & Conditions (Last Updated: 10 March 2025)</h4>
+            
+            <p><strong>Agreement:</strong><br>
+            By using our service, you agree to these terms.</p>
+            
+            <p><strong>Revisions & Adjustments:</strong><br>
+            You can request up to 2 rounds of revisions (including changes to text, color theme, and design elements). Extra revisions may incur additional charges.</p>
+            
+            <p><strong>Payment & Delivery:</strong><br>
+            The final design (PFP without watermark) is delivered only after full payment. No changes will be made after final approval.</p>
+            
+            <p><strong>Ownership:</strong><br>
+            Once paid, you own the design. We may use the design in our portfolio.</p>
+            
+            <p><strong>Liability:</strong><br>
+            We are not responsible for any damages related to our service.</p>
+            
+            <p><strong>Updates:</strong><br>
+            We may update these terms at any time. Updated terms will be posted on our website.</p>
+            
+            <p><strong>Contact:</strong><br>
+            For any questions, please contact us.</p>
+          </div>
+          <button id="accept-terms" class="btn-primary">Accept</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews section has been removed -->
+
+    <!-- Footer -->
+    <footer class="glass-card footer">
+      <div class="copyright">
+        &copy; 2023 HITENDRA edition. All Rights Reserved.
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
